@@ -1,16 +1,16 @@
 <%--
   Created by IntelliJ IDEA.
   User: 34725
-  Date: 2020/12/14
-  Time: 22:13
+  Date: 2020/12/15
+  Time: 20:59
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  <a href="${pageContext.request.contextPath}/allBook">进入书籍页面</a>
-  </body>
+<head>
+    <title>Title</title>
+</head>
+<body>
+书籍展示
+</body>
 </html>

@@ -10,7 +10,7 @@ import java.util.List;
  * @date: 2020/12/14 - 21:14
  * @description:
  */
-public interface BookMapper {
+public interface BooksMapper {
 //    add book
     int addBook(Books book);
 //    delete book

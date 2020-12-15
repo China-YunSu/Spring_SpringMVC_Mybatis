@@ -1,6 +1,6 @@
 package man.kuke.service;
 
-import man.kuke.dao.BookMapper;
+import man.kuke.dao.BooksMapper;
 import man.kuke.pojo.Books;
 
 import java.util.List;
@@ -11,38 +11,38 @@ import java.util.List;
  * @description:
  */
 public class BookServiceImp implements BookService {
-    private BookMapper bookMapper;
+    private BooksMapper booksMapper;
 
-    public BookMapper getBookMapper() {
-        return bookMapper;
+    public BooksMapper getBooksMapper() {
+        return booksMapper;
     }
 
-    public void setBookMapper(BookMapper bookMapper) {
-        this.bookMapper = bookMapper;
+    public void setBooksMapper(BooksMapper booksMapper) {
+        this.booksMapper = booksMapper;
     }
 
     @Override
     public int addBook(Books book) {
-        return bookMapper.addBook(book);
+        return booksMapper.addBook(book);
     }
 
     @Override
     public int deleteBook(int id) {
-        return bookMapper.deleteBook(id);
+        return booksMapper.deleteBook(id);
     }
 
     @Override
     public int updateBook(Books books) {
-        return bookMapper.updateBook(books);
+        return booksMapper.updateBook(books);
     }
 
     @Override
     public Books queryBookById(int id) {
-        return bookMapper.queryBookById(id);
+        return booksMapper.queryBookById(id);
     }
 
     @Override
     public List<Books> queryBooks() {
-        return bookMapper.queryBooks();
+        return booksMapper.queryBooks();
     }
 }
